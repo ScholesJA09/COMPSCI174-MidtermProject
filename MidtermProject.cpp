@@ -90,6 +90,46 @@ int main()
 	//Validate input to prevent overflow and underflow.
 
 	//5
-
+	double convert_value;
+	if (convert_num == 1)
+	{
+		if (measurement_num == 1)
+		{
+			convert_value = value * 0.3048;
+			std::cout << "Conversion: " << value << "ft = " << convert_value << "m." << std::endl;
+		}
+		else
+		{
+			convert_value = value / 0.3048;
+			std::cout << "Converstion: " << value << "m. = " << convert_value << "ft." << std::endl;
+		}
+	}
+	else if (convert_num == 2)
+	{
+		if (measurement_num == 1)
+		{
+			convert_value = (value - 32) * 5 / 9;
+			std::cout << "Conversion: " << value << "F = " << convert_value << "C" << std::endl;
+		}
+		else
+		{
+			convert_value = value * 9 / 5 + 32;
+			std::cout << "Conversion: " << value << "C = " << convert_value << "F" << std::endl;
+		}
+	}
+	else
+	{
+		if (measurement_num == 1)
+		{
+			convert_value = value * 453.592;
+			std::cout << "Conversion: " << value << "lb. = " << convert_value << "g." << std::endl;
+		}
+		else
+		{
+			convert_value = value / 453.592;
+			std::cout << "Conversion: " << value << "g. = " << convert_value << "lb." << std::endl;
+		}
+	}
+	
 	return 0;
 }
