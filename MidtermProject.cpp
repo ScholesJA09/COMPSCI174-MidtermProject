@@ -10,7 +10,7 @@ int main()
 	while (true) {
 		while (true) {
 			std::cout << "Type the measurement you want to convert (1 for distance, 2 for temperature, 3 for mass)." << std::endl;
-			std::cout << "Type 'exit' or 'quit' to leave" << std::endl;
+			std::cout << "Type 'exit' or 'quit' to leave." << std::endl;
 			std::getline(std::cin, temp);
 			if (temp == "quit" || temp == "exit") { 
 				std::cout << "Goodbye!" << std::endl;
@@ -101,7 +101,7 @@ int main()
 				else { break; }
 			}
 		}
-		//Validate input to prevent overflow and underflow.
+
 
 		//5
 		double convert_value;
