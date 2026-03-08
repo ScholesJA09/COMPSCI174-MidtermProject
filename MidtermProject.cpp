@@ -110,7 +110,7 @@ int main()
 			if (measurement_num == 1)
 			{
 				convert_value = value * 0.3048;
-				std::cout << "Conversion: " << value << "ft = " << convert_value << "m." << std::endl;
+				std::cout << "Conversion: " << value << "ft. = " << convert_value << "m." << std::endl;
 			}
 			else
 			{
